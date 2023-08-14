@@ -1,0 +1,91 @@
+body {
+  background: #000;
+  font-family: "Poppins";
+}
+.container-main {
+  width: 100%;
+  height: 100%;
+}
+
+.parent-container {
+  width: 100%; /* Ancho del contenedor padre */
+  background: linear-gradient(270deg, #6d95fc -100%, rgba(0, 0, 0, 0.35) 30%);
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.child-div {
+  width: 100%; /* Ancho del div hijo */
+  /* background-color: lightblue;*/
+  text-align: center;
+  /* border: 1px #9e9e9e;
+  border-style: solid;*/
+}
+.container {
+  display: inline-block;
+  width: 24%; /* Cada contenedor ocupa el 25% del ancho */
+  box-sizing: border-box;
+  padding: 5px;
+  /*  border-style: solid;
+  /* border: 1px solid #6d95fc;*/
+  box-sizing: border-box;
+}
+
+.inner-element {
+  margin-left: 10px;
+  margin-right: 10px;
+  /* border-style: solid;
+  border: 1px solid #6d95fc;*/
+}
+.inner-element-text-numbers {
+  /*  border-style: solid;
+  border: 1px solid #6d95fc;*/
+  font-size: 30px;
+  max-width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: bolder;
+  align-items: center;
+  color: white;
+  /* height: 67px;*/
+}
+
+.inner-element-text-options {
+  /* border-style: solid;
+  border: 1px solid #6d95fc;*/
+  font-size: 14px;
+  color: #6d95fc;
+  max-width: 100%;
+  font-size: 10px;
+  line-height: 1.25em;
+  height: 1.5em;
+  max-height: 1.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0; /* Eliminar el margen predeterminado del párrafo */
+  overflow: hidden; /* Evitar que el contenido flote fuera del contenedor */
+  text-overflow: ellipsis; /* Mostrar puntos suspensivos si el contenido es demasiado largo */
+  white-space: nowrap; /* Evitar el salto de línea automático */
+}
+
+.inner-element img {
+  display: block; /* Para centrar verticalmente */
+  margin: 0 auto; /* Centrar horizontalmente */
+  max-width: 100%; /* Asegurarse de que la imagen no exceda el ancho del contenedor */
+  height: 50px; /* Mantener la proporción de aspecto */
+}
+
+/* Media query para dispositivos con un ancho máximo de 600px */
+@media (max-width: 680px) {
+  .container {
+    width: 100%; /* Cambiar el ancho para ocupar el 100% en dispositivos pequeños */
+    margin: 0; /* Eliminar el margen entre contenedores en dispositivos pequeños */
+    padding: 10px; /* Agregar más espacio interno en dispositivos pequeños */
+    float: none; /* Cancelar la propiedad float */
+  }
+}
+
